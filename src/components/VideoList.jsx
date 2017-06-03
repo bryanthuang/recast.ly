@@ -1,9 +1,9 @@
 var VideoList = (props) => (
   <div className="video-list media">
-    {
-      props.videos.map(video =>
-      <VideoListEntry video={video} handleClick={props.handleClick.bind(null, video)}/>
-    )}
+  {
+    props.videos.map(video =>
+    <VideoListEntry video={video} handleClick={props.handleClick.bind(null, video)}/>
+  )}
   </div>
 );
 

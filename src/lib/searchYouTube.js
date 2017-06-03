@@ -9,16 +9,10 @@ var searchYouTube = (options, callback) => {
       'key': YOUTUBE_API_KEY
     },
     success: function(data) {
-      console.log(data.items);
-      callback(data);
+      console.log('query: ', options);
+      callback(data.items);
     }
   });  
 };
 
 window.searchYouTube = searchYouTube;
-// 'GET',
-//                 '/youtube/v3/search',
-//                 {'maxResults': '5',
-//                  'part': 'snippet',
-//                  'q': 'surfing',
-//                  'type': 'video'})
